@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0d001a, #2a004d, #1a0033);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* loader */
+#loader {
+  position: absolute;
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #6600cc;
+  border-top: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* main */
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 3em;
+  background: linear-gradient(90deg, #b266ff, #cc99ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #6600cc;
+  color: white;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
